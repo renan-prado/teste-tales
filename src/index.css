@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Hina Mincho', serif;
+  font-size: 100%;
+  background: #e4e4e4;
+}
+
+main {
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.App {
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+/* Header */
+.header-text {
+  text-align: center;
+  font-size: 2em;
+  color: #757575;
+}
+
+/* box de busca */
+.search-box {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.search-box ::-webkit-input-placeholder {
+  /* Edge */
+  font-family: 'Hina Mincho', serif;
+  font-size: 1em;
+}
+
+.search-box :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-family: 'Hina Mincho', serif;
+  font-size: 1em;
+}
+
+.search-box ::placeholder {
+  font-family: 'Hina Mincho', serif;
+  font-size: 1em;
+}
+
+.search-box input {
+  font-family: 'Hina Mincho', serif;
+  display: block;
+  font-size: 1.6em;
+  padding: .5em 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  border-bottom: 2px solid #b3b2b2;
+  width: 100%;
+}
+
+/* Resultado de busca */
+.result-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #efefef;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #aba8a8;
+  margin-top: 2em;
+}
+
+.local {
+  font-size: 2em;
+  color: #1a1a1a;
+}
+
+.weather-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.weather-box .temp {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.weather-box .weather-infos {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.weather-infos.w-max,
+.weather-infos.w-min {
+  width: 50%;
+  font-size: 2em;
+}
+
+.weather-infos.w-max span,
+.weather-infos.w-min span {
+  font-size: 0.5em;
+  display: block;
+}
+
+.w-min {
+  color: #911F27;
+}
+
+.w-max {
+  color: #233E8B;
+}
+
+span.sensacao {
+  display: block;
+  font-size: 0.7em;
+}
+
+.sub-infos {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sub-infos .weather-infos {
+  width: 100%;
+  text-align: center;
+}
+
+.sub-infos .weather-infos span {
+  display: block;
+  text-align: center;
+}
